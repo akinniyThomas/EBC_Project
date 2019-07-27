@@ -44,6 +44,7 @@
     <Compile Include="EBC_Project\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ebc_app\static\ebc_app\style.css" />
     <Content Include="ebc_app\templates\ebc_app\base.html" />
     <Content Include="ebc_app\templates\ebc_app\index.html" />
     <Content Include="requirements.txt" />
