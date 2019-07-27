@@ -1,9 +1,13 @@
-<html>
-<head><title></title></head>
+{% extends "ebc_app/base.html" %}
 
-<body>
+{% block header %}
+    <h1>Header</h1>
+{% endblock %}
 
-{{ content }}
+{% block content %}
+    <h2>Content</h2>
+{% endblock %}
 
-</body>
-</html>
+{% block footer %}
+    <h3>Footer</h3>
+{% endblock %}
