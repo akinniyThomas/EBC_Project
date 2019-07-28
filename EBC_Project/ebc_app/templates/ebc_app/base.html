@@ -6,6 +6,8 @@
     <title>{{ title }}</title>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'ebc_app/style.css' %}" />
+    {% block my_static %}
+    {% endblock %}
 </head>
 <body>
     <div class="head">
