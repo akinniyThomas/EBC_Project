@@ -45,6 +45,14 @@
             <td>Date1</td>
             <td>series1</td>
         </tr>
+        {% for mesage in mesages %}
+            <tr>
+                <td><a href="{{ mesage.fileLink }}">{{ mesage.topic }}</a></td>
+                <td><a href="{{ mesage.fileLink }}">{{ mesage.preacher }}</a></td>
+                <td><a href="{{ mesage.fileLink }}">{{ mesage.series }}</a></td>
+                <td><a href="{{ mesage.fileLink }}">{{ mesage.dateAndTime }}</a></td>
+            </tr>
+        {% endfor %}
     </table>
 {% endblock %}
 
