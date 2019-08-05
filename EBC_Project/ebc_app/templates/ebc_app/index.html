@@ -13,7 +13,7 @@
 
 {% block content %}
     <h2>Content</h2>
-    <table>
+    <table class="tablo">
         <caption>Caption</caption>
         <tr>
             <th>Message</th>
@@ -46,12 +46,14 @@
             <td>series1</td>
         </tr>
         {% for mesage in mesages %}
+        <a href="{{ message.fileLink }}">
             <tr>
                 <td><a href="{{ mesage.fileLink }}">{{ mesage.topic }}</a></td>
                 <td><a href="{{ mesage.fileLink }}">{{ mesage.preacher }}</a></td>
                 <td><a href="{{ mesage.fileLink }}">{{ mesage.series }}</a></td>
                 <td><a href="{{ mesage.fileLink }}">{{ mesage.dateAndTime }}</a></td>
             </tr>
+        </a>
         {% endfor %}
     </table>
 {% endblock %}
